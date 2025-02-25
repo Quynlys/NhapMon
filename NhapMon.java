@@ -1,3 +1,4 @@
+package Nhapmon;
 import java.util.Scanner;
 
  class Tong {
@@ -5,20 +6,19 @@ import java.util.Scanner;
     {
         int Q = 0;
         for (int i = 1 ; i <= x ; i++)
-         {
-          String xx = ""+x+x;
-            Q += xx;
+        {
+            String NN = String.valueOf(i);
+            NN = NN + NN;
+            int T = Integer.parseInt(NN);
+            Q += T;
         }
         return Q;
     }
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
+        Scanner scanner = new Scanner(System.in);        
         System.out.print("Nhap N: ");
-        int N = scanner.nextInt();
-                
-        System.out.println("Tong S = "+ So(N));
-        
+        int x = scanner.nextInt();                
+        System.out.println("Tong S = "+ So(x));       
         scanner.close();
     }
 }
