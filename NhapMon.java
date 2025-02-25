@@ -5,8 +5,9 @@ import java.util.Scanner;
     {
         int Q = 0;
         for (int i = 1 ; i <= x ; i++)
-        {
-            Q += i * 11;
+         {
+          String xx = ""+x+x;
+            Q += xx;
         }
         return Q;
     }
